@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>TinyTTS — Text to Speech</title>
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+  <body>
+    <main class="card">
+      <header>
+        <h1>TinyTTS</h1>
+        <p class="sub">Type something. Hear it spoken.</p>
+      </header>
+
+      <label class="field">
+        <span>HuggingFace token</span>
+        <input
+          id="hf-token"
+          type="password"
+          autocomplete="off"
+          placeholder="hf_..."
+        />
+        <small class="hint">Stored only in your browser (localStorage). Sent to the local server to download the model.</small>
+      </label>
+
+      <textarea
+        id="text"
+        rows="8"
+        placeholder="Type or paste text here..."
+      >TinyTTS is an ultra-lightweight text-to-speech model. The audio quality remains surprisingly clear despite the small model size.</textarea>
+
+      <div class="controls">
+        <label class="field">
+          <span>Voice</span>
+          <select id="speaker">
+            <option value="MALE">Male</option>
+            <option value="FEMALE">Female</option>
+          </select>
+        </label>
+
+        <label class="field">
+          <span>Speed <output id="speed-val">1.00×</output></span>
+          <input id="speed" type="range" min="0.5" max="2" step="0.05" value="1" />
+        </label>
+      </div>
+
+      <div class="actions">
+        <button id="generate" type="button">Generate</button>
+        <span id="status" class="status"></span>
+      </div>
+
+      <section id="player-wrap" class="player" hidden>
+        <audio id="player" controls></audio>
+        <a id="download" href="/out.wav" download="out.wav">Download out.wav</a>
+      </section>
+    </main>
+
+    <script src="/script.js"></script>
+  </body>
+</html>

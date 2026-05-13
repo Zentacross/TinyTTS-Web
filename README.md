@@ -37,7 +37,7 @@ Type text → pick a voice and speed → click **Generate** → listen or downlo
 ## Installation
 
 ```bash
-git clone https://github.com/<you>/tinytts-web.git
+git clone https://github.com/Zentacross/tinytts-web.git
 cd tinytts-web
 
 pip install flask tiny-tts

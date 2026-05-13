@@ -4,7 +4,7 @@ A minimal browser UI for [**TinyTTS**](https://github.com/tronghieuit/tiny-tts) 
 
 Type text → pick a voice and speed → click **Generate** → listen or download the resulting `out.wav`.
 
-![screenshot](docs/screenshot.png)
+![TinyTTS Web screenshot](https://raw.githubusercontent.com/Zentacross/TinyTTS-Web/main/Screenshot.png)
 
 ---
 
@@ -37,8 +37,8 @@ Type text → pick a voice and speed → click **Generate** → listen or downlo
 ## Installation
 
 ```bash
-git clone https://github.com/Zentacross/tinytts-web.git
-cd tinytts-web
+git clone https://github.com/Zentacross/TinyTTS-Web.git
+cd TinyTTS-Web
 
 pip install flask tiny-tts
 ```
